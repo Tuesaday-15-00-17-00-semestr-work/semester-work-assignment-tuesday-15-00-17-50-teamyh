@@ -1,0 +1,158 @@
+2024-12-16T13:05:52.237+01:00  INFO 23820 --- [LibraryManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-16T13:05:52.247+01:00  INFO 23820 --- [LibraryManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-16T13:05:52.256+01:00  INFO 23820 --- [LibraryManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-16T13:05:56.158+01:00  INFO 11628 --- [LibraryManagementSystem] [main] org.example.backend.BackendApplication   : Starting BackendApplication using Java 21.0.4 with PID 11628 (C:\Users\egor\Desktop\LibraaryManagmentSystem\backend\target\classes started by egor in C:\Users\egor\Desktop\LibraaryManagmentSystem)
+2024-12-16T13:05:56.165+01:00  INFO 11628 --- [LibraryManagementSystem] [main] org.example.backend.BackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-16T13:05:56.792+01:00  INFO 11628 --- [LibraryManagementSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-16T13:05:56.850+01:00  INFO 11628 --- [LibraryManagementSystem] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 5 JPA repository interfaces.
+2024-12-16T13:05:57.435+01:00  INFO 11628 --- [LibraryManagementSystem] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-16T13:05:57.447+01:00  INFO 11628 --- [LibraryManagementSystem] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-16T13:05:57.447+01:00  INFO 11628 --- [LibraryManagementSystem] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-16T13:05:57.500+01:00  INFO 11628 --- [LibraryManagementSystem] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-16T13:05:57.501+01:00  INFO 11628 --- [LibraryManagementSystem] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1296 ms
+2024-12-16T13:05:57.704+01:00  INFO 11628 --- [LibraryManagementSystem] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-16T13:05:57.786+01:00  INFO 11628 --- [LibraryManagementSystem] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-16T13:05:57.811+01:00  INFO 11628 --- [LibraryManagementSystem] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-16T13:05:58.061+01:00  INFO 11628 --- [LibraryManagementSystem] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-16T13:05:58.444+01:00  INFO 11628 --- [LibraryManagementSystem] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.DriverManagerDataSource@6cbbb9c4']
+	Database driver: undefined/unknown
+	Database version: 9.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-16T13:05:59.165+01:00  INFO 11628 --- [LibraryManagementSystem] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-16T13:05:59.261+01:00  INFO 11628 --- [LibraryManagementSystem] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-16T13:05:59.612+01:00  INFO 11628 --- [LibraryManagementSystem] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-12-16T13:05:59.736+01:00 DEBUG 11628 --- [LibraryManagementSystem] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 21 mappings in 'requestMappingHandlerMapping'
+2024-12-16T13:05:59.825+01:00 DEBUG 11628 --- [LibraryManagementSystem] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-16T13:06:00.026+01:00 DEBUG 11628 --- [LibraryManagementSystem] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-16T13:06:00.072+01:00 DEBUG 11628 --- [LibraryManagementSystem] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-16T13:06:00.216+01:00  INFO 11628 --- [LibraryManagementSystem] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-16T13:06:00.223+01:00  INFO 11628 --- [LibraryManagementSystem] [main] org.example.backend.BackendApplication   : Started BackendApplication in 4.454 seconds (process running for 4.77)
+2024-12-16T13:06:00.398+01:00 DEBUG 11628 --- [LibraryManagementSystem] [main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-16T13:06:21.354+01:00  INFO 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-16T13:06:21.354+01:00  INFO 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-16T13:06:21.355+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-16T13:06:21.355+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-16T13:06:21.355+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-16T13:06:21.355+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1d7f2719
+2024-12-16T13:06:21.355+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@f461c9c
+2024-12-16T13:06:21.356+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-16T13:06:21.356+01:00  INFO 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-12-16T13:06:21.373+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2024-12-16T13:06:21.373+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.backend.controller.AuthController#loginUser(User)
+2024-12-16T13:06:21.423+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [org.example.backend.model.User@54a58f48]
+2024-12-16T13:06:21.428+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-16T13:06:21.508+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/yaml]
+2024-12-16T13:06:21.508+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["USER"]
+2024-12-16T13:06:21.512+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-16T13:09:12.412+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2024-12-16T13:09:12.412+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.backend.controller.AuthController#loginUser(User)
+2024-12-16T13:09:12.413+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [org.example.backend.model.User@61cc22e1]
+2024-12-16T13:09:12.416+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-16T13:09:12.488+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/yaml]
+2024-12-16T13:09:12.488+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["USER"]
+2024-12-16T13:09:12.489+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-16T13:14:09.601+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2024-12-16T13:14:09.601+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.backend.controller.AuthController#loginUser(User)
+2024-12-16T13:14:09.603+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [org.example.backend.model.User@6b49a006]
+2024-12-16T13:14:09.605+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-16T13:14:09.682+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/yaml]
+2024-12-16T13:14:09.682+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["USER"]
+2024-12-16T13:14:09.683+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-16T13:18:02.783+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2024-12-16T13:18:02.783+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.backend.controller.AuthController#loginUser(User)
+2024-12-16T13:18:02.783+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [org.example.backend.model.User@47c6cd5c]
+2024-12-16T13:18:02.786+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-16T13:18:02.865+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/yaml]
+2024-12-16T13:18:02.865+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["USER"]
+2024-12-16T13:18:02.865+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-16T13:21:29.641+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2024-12-16T13:21:29.642+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.backend.controller.AuthController#loginUser(User)
+2024-12-16T13:21:29.644+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [org.example.backend.model.User@e368136]
+2024-12-16T13:21:29.646+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-16T13:21:29.735+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/yaml]
+2024-12-16T13:21:29.735+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["USER"]
+2024-12-16T13:21:29.736+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-16T13:21:57.584+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/auth/login", parameters={}
+2024-12-16T13:21:57.585+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.example.backend.controller.AuthController#loginUser(User)
+2024-12-16T13:21:57.585+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [org.example.backend.model.User@6a5454b1]
+2024-12-16T13:21:57.586+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-16T13:21:57.661+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/yaml]
+2024-12-16T13:21:57.661+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["USER"]
+2024-12-16T13:21:57.662+01:00 DEBUG 11628 --- [LibraryManagementSystem] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-16T13:38:04.768+01:00  INFO 11628 --- [LibraryManagementSystem] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-16T13:38:04.772+01:00  INFO 11628 --- [LibraryManagementSystem] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-16T13:38:04.775+01:00  INFO 11628 --- [LibraryManagementSystem] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
