@@ -38,9 +38,7 @@ public class UserService {
      * Get a user by ID.
      */
     public Optional<User> getUserById(Long id) {
-        if (id == null) {
-            throw new IllegalArgumentException("ID cannot be null");
-        }
+        validateNotNull(id, "ID");
         return userRepository.findById(id);
     }
 
@@ -74,7 +72,7 @@ public class UserService {
             throw new IllegalArgumentException("Email is already taken");
         }
 
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        user.setPassword(passwordEncoder.encode(user.getPassword())); // Encode password
         return userRepository.save(user);
     }
 
@@ -82,10 +80,7 @@ public class UserService {
      * Delete a user by ID.
      */
     public void deleteUser(Long userId) {
-        if (userId == null) {
-            throw new IllegalArgumentException("User ID cannot be null");
-        }
-
+        validateNotNull(userId, "User ID");
         userRepository.deleteById(userId);
     }
 
@@ -93,18 +88,19 @@ public class UserService {
      * Update user details.
      */
     public User updateUser(Long userId, User userDetails) {
-        if (userId == null || userDetails == null) {
-            throw new IllegalArgumentException("User ID or user details cannot be null");
-        }
+        validateNotNull(userId, "User ID");
+        validateNotNull(userDetails, "User details");
 
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new IllegalArgumentException("User with ID " + userId + " not found"));
 
-        if (userDetails.getUsername() != null) {
+        // Update username if provided
+        if (userDetails.getUsername() != null && !userDetails.getUsername().isEmpty()) {
             user.setUsername(userDetails.getUsername());
         }
 
-        if (userDetails.getEmail() != null) {
+        // Update email with uniqueness check
+        if (userDetails.getEmail() != null && !userDetails.getEmail().isEmpty()) {
             if (userRepository.existsByEmail(userDetails.getEmail()) &&
                     !user.getId().equals(userDetails.getId())) {
                 throw new IllegalArgumentException("Email is already in use");
@@ -112,11 +108,21 @@ public class UserService {
             user.setEmail(userDetails.getEmail());
         }
 
-        if (userDetails.getPassword() != null) {
+        // Update password only if provided
+        if (userDetails.getPassword() != null && !userDetails.getPassword().isEmpty()) {
             user.setPassword(passwordEncoder.encode(userDetails.getPassword()));
         }
 
         return userRepository.save(user);
+    }
+
+    /**
+     * Validate that a value is not null.
+     */
+    private void validateNotNull(Object value, String fieldName) {
+        if (value == null) {
+            throw new IllegalArgumentException(fieldName + " cannot be null");
+        }
     }
 
     /**
@@ -132,10 +138,7 @@ public class UserService {
      * Validate user details.
      */
     private void validateUserDetails(User user) {
-        if (user == null) {
-            throw new IllegalArgumentException("User cannot be null");
-        }
-
+        validateNotNull(user, "User");
         validateNonEmpty(user.getUsername(), "Username");
         validateNonEmpty(user.getEmail(), "Email");
         validateNonEmpty(user.getPassword(), "Password");
